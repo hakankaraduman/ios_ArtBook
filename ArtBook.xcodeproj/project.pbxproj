@@ -14,6 +14,7 @@
 		84A621AE26D1647900423927 /* ArtBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84A621AC26D1647900423927 /* ArtBook.xcdatamodeld */; };
 		84A621B026D1647E00423927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A621AF26D1647E00423927 /* Assets.xcassets */; };
 		84A621B326D1647E00423927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A621B126D1647E00423927 /* LaunchScreen.storyboard */; };
+		84A621BD26D1717200423927 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A621BC26D1717200423927 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		84A621AF26D1647E00423927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84A621B226D1647E00423927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84A621B426D1647E00423927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A621BC26D1717200423927 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				84A621A326D1647900423927 /* AppDelegate.swift */,
 				84A621A526D1647900423927 /* SceneDelegate.swift */,
 				84A621A726D1647900423927 /* ViewController.swift */,
+				84A621BC26D1717200423927 /* AddViewController.swift */,
 				84A621A926D1647900423927 /* Main.storyboard */,
 				84A621AF26D1647E00423927 /* Assets.xcassets */,
 				84A621B126D1647E00423927 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A621BD26D1717200423927 /* AddViewController.swift in Sources */,
 				84A621A826D1647900423927 /* ViewController.swift in Sources */,
 				84A621A426D1647900423927 /* AppDelegate.swift in Sources */,
 				84A621AE26D1647900423927 /* ArtBook.xcdatamodeld in Sources */,
