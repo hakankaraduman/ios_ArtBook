@@ -28,8 +28,6 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         imageView.isUserInteractionEnabled = true;
         let imageTap = UITapGestureRecognizer(target: self, action: #selector(onImageTap))
         imageView.addGestureRecognizer(imageTap)
-        
-        // navigationController?.navigationBar.topItem?.rightBarButtonItems = [UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(onSave))]
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,6 +37,11 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         if paintingId != nil {
             saveButton.isHidden = true
             getPainting()
+        } else {
+            // navigationController?.navigationBar.topItem?.rightBarButtonItems = [UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(onSaveBar))]
+            
+            // same issue without using the array
+            navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(onSaveBar))
         }
     }
     
@@ -140,8 +143,8 @@ class AddViewController: UIViewController, UIImagePickerControllerDelegate, UINa
         view.endEditing(true)
     }
     
-    @objc func onSave(){
-        print("onSave")
+    @objc func onSaveBar(){
+        print("onSave BarButton")
     }
     
     func checkIfCanSave(){
